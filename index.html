@@ -273,7 +273,6 @@
       transform: translate(3px, -3px);
     }
 
-    /* ── Skills strip ──────────────────────────────────────────── */
     .skills {
       padding: 56px 0;
       border-top: 1px solid var(--border);
@@ -305,8 +304,7 @@
       color: var(--accent);
       border-color: var(--accent);
     }
-
-    /* ── Footer ────────────────────────────────────────────────── */
+    
     footer {
       position: relative;
       z-index: 1;
@@ -318,13 +316,13 @@
       color: var(--muted);
     }
 
-    /* ── Animations ────────────────────────────────────────────── */
+ 
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(24px); }
       to   { opacity: 1; transform: translateY(0); }
     }
 
-    /* ── Responsive ────────────────────────────────────────────── */
+
     @media (max-width: 640px) {
       header {
         grid-template-columns: 1fr;
@@ -347,7 +345,7 @@
     <div class="name-block">
       <p class="eyebrow">Data Scientist &amp; Physicist</p>
       <h1>Ana<br><em>Flores</em></h1>
-      <p class="tagline">// Python · Statistical modeling · Stochastic simulation</p>
+      <p class="tagline"> Python · Statistical modeling · Stochastic simulation</p>
     </div>
 
     <div class="contact-block">
@@ -497,7 +495,7 @@
   function draw() {
     ctx.clearRect(0, 0, W, H);
 
-    // Draw connection lines
+    
     for (let i = 0; i < particles.length; i++) {
       for (let j = i + 1; j < particles.length; j++) {
         const dx = particles[i].x - particles[j].x;
@@ -514,7 +512,7 @@
       }
     }
 
-    // Draw dots
+    
     particles.forEach(p => {
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
